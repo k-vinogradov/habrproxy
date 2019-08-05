@@ -44,5 +44,6 @@ def main():
     configure_logger(args.verbose)
     app(args.remote_address, args.port)
 
+
 if __name__ == "__main__":
     main()
