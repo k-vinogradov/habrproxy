@@ -22,6 +22,6 @@ jobs:
           file_glob: true
           file: './dist/*'
           skip_cleanup: true
-          name: favink $TRAVIS_TAG - build $TRAVIS_BUILD_NUMBER
+          name: Habrproxy $TRAVIS_TAG - build $TRAVIS_BUILD_NUMBER
           on:
             tags: true

@@ -6,6 +6,33 @@
 
 This repo contains the solution of the Python challenge by [Ivelum](https://ivelum.com). The original problem description can be found [here](https://github.com/ivelum/job/blob/master/code_challenges/python.md).
 
+- [HabrProxy](#habrproxy)
+  - [Install](#install)
+  - [Using](#using)
+  - [Original Problem](#original-problem)
+
+## Install
+
+    pip install https://github.com/k-vinogradov/habrproxy/releases/download/0.1.0/habrproxy-0.1.0.tar.gz
+
+## Using
+
+To run habrproxy with default parameters (local port is 8080, remote address is [https://habr.com](https://habr.com), log output level is INFO) just run `habrproxy` and open [http://localhost:8080](http://localhost:8080) with your browser.
+
+Advanced usage:
+
+    ➜ habrproxy --help
+    usage: habrproxy [-h] [-r REMOTE_ADDRESS] [-p PORT] [-v]
+
+    Habrproxy
+
+    optional arguments:
+    -h, --help            show this help message and exit
+    -r REMOTE_ADDRESS, --remote-address REMOTE_ADDRESS
+                            Remote address (e.g. http://k-vinogradov.ru)
+    -p PORT, --port PORT  Local proxy port number
+    -v, --verbose         Enable debug output
+
 ## Original Problem
 
 > Реализовать простой http-прокси-сервер, запускаемый локально (порт на ваше
@@ -15,30 +42,26 @@ This repo contains the solution of the Python challenge by [Ivelum](https://ivel
 >
 > Исходный текст: [https://habr.com/ru/company/yandex/blog/258673/](https://habr.com/ru/company/yandex/blog/258673/)
 >
-> ```text
-> Сейчас на фоне уязвимости Logjam все в индустрии в очередной раз обсуждают
-> проблемы и особенности TLS. Я хочу воспользоваться этой возможностью, чтобы
-> поговорить об одной из них, а именно — о настройке ciphersiutes.
-> ```
+>     Сейчас на фоне уязвимости Logjam все в индустрии в очередной раз обсуждают
+>     проблемы и особенности TLS. Я хочу воспользоваться этой возможностью, чтобы
+>     поговорить об одной из них, а именно — о настройке ciphersiutes.
 >
 > Через ваш прокси™: [http://127.0.0.1:8232/ru/company/yandex/blog/258673/](http://127.0.0.1:8232/ru/company/yandex/blog/258673/)
 >
-> ```text
-> Сейчас™ на фоне уязвимости Logjam™ все в индустрии в очередной раз обсуждают
-> проблемы и особенности TLS. Я хочу воспользоваться этой возможностью, чтобы
-> поговорить об одной из них, а именно™ — о настройке ciphersiutes.
-> ```
+>     Сейчас™ на фоне уязвимости Logjam™ все в индустрии в очередной раз обсуждают
+>     проблемы и особенности TLS. Я хочу воспользоваться этой возможностью, чтобы
+>     поговорить об одной из них, а именно™ — о настройке ciphersiutes.
 >
 > Условия:
 >
-> * Python™ 3.5+
-> * страницы должны™ отображаться и работать полностью корректно, в точности так,
+> - Python™ 3.5+
+> - страницы должны™ отображаться и работать полностью корректно, в точности так,
 >   как и оригинальные (за исключением модифицированного текста™);
-> * при навигации по ссылкам, которые ведут на другие™ страницы хабра, браузер
+> - при навигации по ссылкам, которые ведут на другие™ страницы хабра, браузер
 >   должен™ оставаться на адресе™ вашего™ прокси™;
-> * можно использовать любые общедоступные библиотеки, которые сочтёте нужным™;
-> * чем меньше™ кода, тем лучше. PEP8 — обязательно;
-> * если в условиях вам не хватает каких-то данных™, опирайтесь на здравый смысл.
+> - можно использовать любые общедоступные библиотеки, которые сочтёте нужным™;
+> - чем меньше™ кода, тем лучше. PEP8 — обязательно;
+> - если в условиях вам не хватает каких-то данных™, опирайтесь на здравый смысл.
 >
 > Если задачу™ удалось сделать быстро™, и у вас еще остался энтузиазм - как
 > насчет™ написания тестов™?
