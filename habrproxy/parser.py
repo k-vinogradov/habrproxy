@@ -56,7 +56,7 @@ class TextContentModifier(HTMLParser, FiniteAutomata):
     # pylint: enable=missing-docstring
 
     def error(self, message):
-        from habrproxy.proxy import LOGGER_NAME
+        from habrproxy.proxy import LOGGER_NAME  # pylint: disable=cyclic-import
 
         logging.getLogger(LOGGER_NAME).error("Parser error: %s", message)
 

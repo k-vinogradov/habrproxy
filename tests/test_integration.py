@@ -74,4 +74,3 @@ def test_full_flow(proxy_address):  # pylint: disable=redefined-outer-name
     url = "{}/redirect".format(proxy_address)
     response = urllib.request.urlopen(url)
     assert response.read().decode("utf-8") == read_expected_html()
-
