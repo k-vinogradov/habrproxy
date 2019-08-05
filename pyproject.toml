@@ -16,6 +16,7 @@ aiohttp = "^3.5"
 favink = "^1.0"
 
 [tool.poetry.dev-dependencies]
+black = { version = "*", allows-prereleases = true, python = "^3.6" }
 pydocstyle = "^3.0"
 pylint = "^2.3"
 pytest = "^4.5"
