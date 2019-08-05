@@ -1,0 +1,27 @@
+dist: xenial
+language: python
+python:
+  - '3.5'
+  - '3.6'
+  - '3.7'
+before_install:
+  - pip install poetry
+install:
+  - poetry install
+script:
+  - if [ "$TRAVIS_PYTHON_VERSION" != "3.5" ]; then poetry run black --check --diff habrproxy tests/*; fi
+  - poetry run pylint habrproxy tests/*
+  - poetry run python -m pytest
+  - poetry build
+jobs:
+  include:
+    - stage: Deploy
+      deploy:
+        - provider: releases
+          api_key: '$GITHUB_TOKEN'
+          file_glob: true
+          file: './dist/*'
+          skip_cleanup: true
+          name: favink $TRAVIS_TAG - build $TRAVIS_BUILD_NUMBER
+          on:
+            tags: true

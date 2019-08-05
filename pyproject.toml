@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "habrproxy"
+version = "0.1.0"
+description = "Python developer code challenge"
+authors = ["Konstantin V. <mail@k-vinogradov.ru>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/k-vinogradov/habrproxy"
+
+[tool.poetry.scripts]
+habrproxy = 'habrproxy.bin.run:main'
+
+[tool.poetry.dependencies]
+python = "^3.5.3 || ^3.6"
+aiohttp = "^3.5"
+favink = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pydocstyle = "^3.0"
+pylint = "^2.3"
+pytest = "^4.5"
+rope = "^0.14.0"
+pytest-asyncio = "^0.10.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
