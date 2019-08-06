@@ -6,7 +6,7 @@
 
 This repo contains the solution of the Python challenge by [Ivelum](https://ivelum.com). The original problem description can be found [here](https://github.com/ivelum/job/blob/master/code_challenges/python.md).
 
-**The only purpose of the project is improving of my Python developer skills**
+**The only purpose of the project is improving my Python developer skills**
 
 - [HabrProxy](#habrproxy)
   - [Install](#install)
