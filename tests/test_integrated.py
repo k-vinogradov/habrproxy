@@ -1,4 +1,4 @@
-"""Integration test uses simple mock server and run tested app with subprocess."""
+"""Integrated test uses simple mock server and run tested app with subprocess."""
 
 import http.server
 import os
