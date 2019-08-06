@@ -15,7 +15,7 @@ This repo contains the solution of the Python challenge by [Ivelum](https://ivel
 
 ## Install
 
-    pip install https://github.com/k-vinogradov/habrproxy/releases/download/0.1.0/habrproxy-0.1.0.tar.gz
+    pip install https://github.com/k-vinogradov/habrproxy/releases/download/0.1.1/habrproxy-0.1.1.tar.gz
 
 ## Using
 
