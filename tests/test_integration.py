@@ -29,7 +29,7 @@ def mock_address():
 
         def redirect_to_page(self):
             """Reply with redirect to the main page."""
-            page_url = "{}/page".format(get_proxy_address())
+            page_url = "{}/page".format(get_mock_address())
             self.send_response(302)
             self.send_header("Location", page_url)
             self.end_headers()
