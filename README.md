@@ -6,7 +6,7 @@
 
 This repo contains the solution of the Python challenge by [Ivelum](https://ivelum.com). The original problem description can be found [here](https://github.com/ivelum/job/blob/master/code_challenges/python.md).
 
-**The only purpose of the project is improving my Python developer skills**
+**The only project purpose is improving my Python developer skills**
 
 - [HabrProxy](#habrproxy)
   - [Install](#install)
@@ -19,7 +19,7 @@ This repo contains the solution of the Python challenge by [Ivelum](https://ivel
 
 ## Using
 
-To run habrproxy with default parameters (local port is 8080, remote address is [https://habr.com](https://habr.com), log output level is INFO) just run `habrproxy` and open [http://localhost:8080](http://localhost:8080) with your browser.
+To run habrproxy with the default parameters (local port is 8080, remote address is [https://habr.com](https://habr.com), log output level is INFO) just run `habrproxy` and open [http://localhost:8080](http://localhost:8080) with your browser.
 
 Advanced usage:
 
